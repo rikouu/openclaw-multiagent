@@ -74,10 +74,10 @@ Each bot has its own account entry:
 {
   "xiaoma": {
     "dmPolicy": "pairing",
-    "botToken": "8212067228:AAEU...",
+    "botToken": "1234567890:AAH...",
     "groups": {
       "*": { "requireMention": true },
-      "-1003765196906": {
+      "-100XXXXXXXXXX": {
         "requireMention": true,
         "groupPolicy": "open"
       }
@@ -188,21 +188,21 @@ A 3-agent setup (main + xiaoma + xiaolou):
           "botToken": "...",
           "groups": {
             "*": { "requireMention": true },
-            "-1003765196906": { "requireMention": false, "groupPolicy": "open" }
+            "-100XXXXXXXXXX": { "requireMention": false, "groupPolicy": "open" }
           }
         },
         "xiaoma": {
           "botToken": "...",
           "groups": {
             "*": { "requireMention": true },
-            "-1003765196906": { "requireMention": true, "groupPolicy": "open" }
+            "-100XXXXXXXXXX": { "requireMention": true, "groupPolicy": "open" }
           }
         },
         "xiaolou": {
           "botToken": "...",
           "groups": {
             "*": { "requireMention": true },
-            "-1003765196906": { "requireMention": true, "groupPolicy": "open" }
+            "-100XXXXXXXXXX": { "requireMention": true, "groupPolicy": "open" }
           }
         }
       }

@@ -68,7 +68,7 @@ bash $SCRIPT update-workspaces
 
 ```bash
 bash manage.sh add-agent xiaoli 小丽 数据分析师 anthropic/claude-sonnet-4-6 \
-  "1234567890:AAH..." @xiaoli_data_bot "-1003765196906"
+  "1234567890:AAH..." @xiaoli_data_bot "-100XXXXXXXXXX"
 ```
 
 自动完成：

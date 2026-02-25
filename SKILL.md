@@ -40,7 +40,7 @@ bash scripts/manage.sh add-agent <id> <name> <role> <model> <bot_token> <bot_use
 Example:
 ```bash
 bash scripts/manage.sh add-agent xiaoli 小丽 "数据分析师" "anthropic/claude-sonnet-4-6" \
-  "1234567890:AAH..." "@xiaoli_data_bot" "-1003765196906"
+  "1234567890:AAH..." "@xiaoli_data_bot" "-100XXXXXXXXXX"
 ```
 
 This automatically:

@@ -250,7 +250,7 @@ cmd_bootstrap_meta() {
 cmd_add_agent() {
   if [[ $# -lt 7 ]]; then
     err "Usage: manage.sh add-agent <id> <name> <role> <model> <bot_token> <bot_username> <group_chat_id>"
-    err "Example: manage.sh add-agent xiaoli 小丽 数据分析师 anthropic/claude-sonnet-4-6 1234:AAH... @xiaoli_bot -1003765196906"
+    err "Example: manage.sh add-agent xiaoli 小丽 数据分析师 anthropic/claude-sonnet-4-6 1234:AAH... @xiaoli_bot -100XXXXXXXXXX"
     exit 1
   fi
 
@@ -794,7 +794,7 @@ cmd_update_workspaces() {
     if [[ -z "$group_chat_id" ]]; then
       group_chat_id=$(jq -r '.channels.telegram.accounts | to_entries[0].value.groups | keys[] | select(. != "*")' "$CONFIG" 2>/dev/null | head -1 || true)
     fi
-    [[ -z "$group_chat_id" ]] && group_chat_id="-1003765196906"
+    [[ -z "$group_chat_id" ]] && group_chat_id="-100XXXXXXXXXX"
 
     # Regenerate the team collaboration section only
     local existing_content

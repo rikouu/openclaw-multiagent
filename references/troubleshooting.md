@@ -66,7 +66,7 @@ The pattern must match exactly what users type. Include both Chinese name and ro
 If `requireMention: true`, the agent only responds to @mentions. Check the per-group setting:
 ```json
 "groups": {
-  "-1003765196906": {
+  "-100XXXXXXXXXX": {
     "requireMention": true  // must @mention to trigger
   }
 }
@@ -117,7 +117,7 @@ After clearing, the agent re-reads AGENTS.md on the next interaction.
 message(
   action="send",
   channel="telegram",
-  to="telegram:-1003765196906",
+  to="telegram:-100XXXXXXXXXX",
   accountId="xiaoma",
   message="Task completed! Results: ..."
 )
@@ -129,7 +129,7 @@ This must be documented in each agent's AGENTS.md instructions.
 
 ## 5. Topic mode session key issues
 
-**Symptom:** Strange session keys like `telegram:group:-1003765196906:topic:1`, cache pollution across topics.
+**Symptom:** Strange session keys like `telegram:group:-100XXXXXXXXXX:topic:1`, cache pollution across topics.
 
 **Cause:** Telegram forum/topic groups generate session keys with `:topic:N` suffixes. This creates separate sessions per topic, which can lead to confusion and cache bloat.
 
